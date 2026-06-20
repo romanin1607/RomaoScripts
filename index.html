@@ -434,10 +434,49 @@
     }
 
     @media (max-width: 500px) {
-      .card-header { padding: 20px; flex-direction: column; }
+      /* Tabs com contorno visível */
+      .tab-bar {
+        background: #0e0e17;
+        border-color: #ffffff22;
+      }
+      .tab-btn {
+        padding: 10px 10px;
+        font-size: 0.8rem;
+        border: 1px solid #ffffff25;
+        border-radius: 9px;
+        color: #8888a8;
+        background: #13131e;
+      }
+
+      /* Card header: nome e sub centralizados, working no canto direito */
+      .card-header {
+        padding: 20px 20px 16px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+      .card-meta {
+        flex: 1;
+        text-align: center;
+      }
+      .game-badge {
+        display: block;
+        text-align: center;
+      }
+      .game-title { text-align: center; }
+      .game-sub   { text-align: center; }
+      .status-pill {
+        flex-shrink: 0;
+        align-self: flex-start;
+        margin-left: 10px;
+      }
+
+      /* Script label centralizado */
       .script-section { padding: 18px 20px 22px; }
+      .script-label { text-align: center; }
+
       .chips { padding: 0 20px 18px; }
-      .tab-btn { padding: 10px 14px; font-size: 0.82rem; }
     }
   </style>
 </head>
